@@ -83,6 +83,8 @@
 
 .info {
     padding-top: 274px;
+    display: grid;
+    position: relative;
     &__title {
         text-align: right;
         font-family: 'Architectural';
@@ -91,5 +93,27 @@
         line-height: 110px;
         letter-spacing: 0.04em;
         color: $color-blacked;
+        
+    }
+    &__blocks {
+        position: absolute;
+        top: 376px;
+    }
+    &__block {
+        &-num {
+        }
+        &-text {
+            color: #000;
+            h4 {
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 37px;                
+            }
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
     }
 }

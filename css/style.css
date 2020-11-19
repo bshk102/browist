@@ -27,9 +27,9 @@
 }
 
 @font-face {
-  font-family: 'Standart Poster';
-  src: url("/fonts/Standart-Poster.ttf");
-  font-weight: 400;
+  font-family: 'StandardPoster';
+  src: url("/fonts/7438.ttf");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -144,6 +144,9 @@
 
 .info {
   padding-top: 274px;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
 }
 
 .info__title {
@@ -154,4 +157,25 @@
   line-height: 110px;
   letter-spacing: 0.04em;
   color: #0A0909;
+}
+
+.info__blocks {
+  position: absolute;
+  top: 376px;
+}
+
+.info__block-text {
+  color: #000;
+}
+
+.info__block-text h4 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.info__block-text p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
