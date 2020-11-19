@@ -1,2 +1,95 @@
 @import 'vars';
-@import 'fonts'
+@import 'fonts';
+
+.btn {
+    background: $color1;
+    border-radius: 50px 0px;
+    font-weight: 500;
+    color: #000;
+}
+
+.landing {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1610px;
+    padding: 0 15px;
+}
+
+.header {
+    padding-top: 69px;
+    &__info {
+        width: fit-content;
+        &-subtitle {
+            text-align: center;
+            color: $color1;
+            font-family: 'GardensCM';
+            font-size: 45px;
+        }
+        &-title {
+            color: $color2;
+            font-weight: bold;
+            font-size: 116px;
+            text-align: left;
+            line-height: 141px;
+            margin-top: 40px;
+        }
+        &-list {
+            color: #000;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            margin-top: 96px;
+            margin-left: 133px;
+            li {
+                text-align: left;
+                margin-bottom: 50px;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background: $color1;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -44px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &-btn {
+            width: 513px;
+            height: 133px;            
+            font-size: 45px;
+            line-height: 55px;
+            margin-top: 137px;
+        }
+    }
+}
+
+.info {
+    padding-top: 274px;
+    &__title {
+        text-align: right;
+        font-family: 'Architectural';
+        text-transform: uppercase;
+        font-size: 100px;
+        line-height: 110px;
+        letter-spacing: 0.04em;
+        color: $color-blacked;
+    }
+}
