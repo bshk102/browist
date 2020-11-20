@@ -1,19 +1,28 @@
 const modules = document.querySelectorAll('.program__modules-item')
+const insert = document.querySelectorAll('.program__modules-item p')
+const arrows = document.querySelectorAll('.program__modules__arrow')
+
+for (let i = 0; i < modules.length; i++) {
+    modules[i].addEventListener('mouseover', () => arrows[i].classList.add('program__modules__arrow-hover'))
+    modules[i].addEventListener('mouseout', () => arrows[i].classList.remove('program__modules__arrow-hover'))
+    modules[i].addEventListener('click', () => openModule(i), {once: true})
+}
 
 function openModule(i) {
-    modules[i].innerHTML += `<br><br><p>${data[i].text}</p>`
+    for (let i = 0; i < modules.length; i++) {
+        closeModule(i)
+    }
+    insert[i].textContent += data[i].text
     modules[i].style.height = 'fit-content'
+    modules[i].classList.add('program__modules-item-opened')
+    arrows[i].classList.add('program__modules__arrow-active')
     modules[i].addEventListener('click', () => closeModule(i), {once: true})
 }
 
 function closeModule(i) {
-    console.log('close')
-    let p = modules[i].querySelector('p')
-    modules[i].removeChild(p)
+    insert[i].textContent = ''
     modules[i].style.height = '5.65vw'
-    modules[i].addEventListener('click', () => openModule(i), {once: true})
-}
-
-for (let i = 0; i < modules.length; i++) {
+    modules[i].classList.remove('program__modules-item-opened')
+    arrows[i].classList.remove('program__modules__arrow-active')
     modules[i].addEventListener('click', () => openModule(i), {once: true})
 }
