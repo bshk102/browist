@@ -1,0 +1,9 @@
+const data = [
+    {text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, tenetur vitae assumenda facere necessitatibus in numquam aliquid blanditiis possimus ut itaque, neque, ratione esse eius voluptas rerum? Laboriosam, doloribus enim!'},
+    {text: '23222Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, tenetur vitae assumenda facere necessitatibus in numquam aliquid blanditiis possimus ut itaque, neque, ratione esse eius voluptas rerum? Laboriosam, doloribus enim!'},
+    {text: '3333Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, tenetur vitae assumenda facere necessitatibus in numquam aliquid blanditiis possimus ut itaque, neque, ratione esse eius voluptas rerum? Laboriosam, doloribus enim!'},
+    {text: 'Lorem 4444ipsum, dolor sit amet consectetur adipisicing elit. Delectus, tenetur vitae assumenda facere necessitatibus in numquam aliquid blanditiis possimus ut itaque, neque, ratione esse eius voluptas rerum? Laboriosam, doloribus enim!'},
+    {text: 'Lorem555 psum, dolor sit amet consectetur adipisicing elit. Delectus, tenetur vitae assumenda facere necessitatibus in numquam aliquid blanditiis possimus ut itaque, neque, ratione esse eius voluptas rerum? Laboriosam, doloribus enim!'},
+    {text: 'Lor666em ipsum, dolor sit amet consectetur adipisicing elit. Delectus, tenetur vitae assumenda facere necessitatibus in numquam aliquid blanditiis possimus ut itaque, neque, ratione esse eius voluptas rerum? Laboriosam, doloribus enim!'},
+    {text: 'Lor7777em ipsum, dolor sit amet consectetur adipisicing elit. Delectus, tenetur vitae assumenda facere necessitatibus in numquam aliquid blanditiis possimus ut itaque, neque, ratione esse eius voluptas rerum? Laboriosam, doloribus enim!'}
+]

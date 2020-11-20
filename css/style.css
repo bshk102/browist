@@ -368,8 +368,7 @@ body {
   font-weight: normal;
   line-height: 123%;
   color: #000;
-  padding-left: 52px;
-  padding-top: 2.05vw;
+  padding: 2.05vw 52px;
   position: relative;
   cursor: pointer;
 }
@@ -388,7 +387,7 @@ body {
 }
 
 .program__modules-item:hover {
-  border: 2px solid #DB9143;
+  border: 2px solid rgba(219, 145, 67, 0.87);
 }
 
 .program__modules-item:hover::after {
