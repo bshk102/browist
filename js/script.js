@@ -10,7 +10,9 @@ for (let i = 0; i < modules.length; i++) {
 
 function openModule(i) {
     for (let i = 0; i < modules.length; i++) {
-        closeModule(i)
+        if (modules[i].classList.contains('program__modules-item-opened')) {
+            closeModule(i)
+        }
     }
     insert[i].textContent += data[i].text
     modules[i].style.height = 'fit-content'
