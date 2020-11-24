@@ -10,8 +10,8 @@ function closeModule(i) {
     console.log('close')
     let p = modules[i].querySelector('p')
     modules[i].removeChild(p)
-    modules[i].style.height = '5.65vw'
-    modules[i].addEventListener('click', () => openModule(i), {once: true})
+    //modules[i].style.height = '5.65vw'
+    //modules[i].addEventListener('click', () => openModule(i), {once: true})
 }
 
 for (let i = 0; i < modules.length; i++) {
